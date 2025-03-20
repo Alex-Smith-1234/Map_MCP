@@ -1,3 +1,4 @@
+# filepath: my-python-project/src/map_mcp.py
 from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("map")
