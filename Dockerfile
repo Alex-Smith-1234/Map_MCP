@@ -4,13 +4,13 @@ FROM python:3.12-slim
 WORKDIR /build
 
 # Copy the requirements file
-COPY requirements.txt .
+COPY ../requirements.txt .
 
 # Install the dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the source code
-COPY src/map_mcp.py /build
+COPY ../src/map_mcp.py .
 
 # Command to run the application
 CMD ["python", "map_mcp.py"]
