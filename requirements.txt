@@ -1,2 +1,2 @@
-FastMCP==1.0.0
+FastMCP==0.4.1
 asyncio==3.4.3
