@@ -1,7 +1,7 @@
 FROM python:3.9-slim
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /build
 
 # Copy the requirements file
 COPY requirements.txt .
@@ -10,7 +10,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the source code
-COPY src/ .
+COPY src/map_mcp.py /build
 
 # Command to run the application
 CMD ["python", "map_mcp.py"]
